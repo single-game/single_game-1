@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>food game</title>
+  <style>
+
+    #Border1 {
+        height: 700px;
+        width: 900px;
+        border: 3px solid black;
+    }
+
+    .pos2 {
+        border: 3px ridge burlywood;
+        height: 150px;
+        width: 700px;
+
+        position: relative;
+        right: 100px;
+    }
+
+    .pos {
+        position: relative;
+        padding: 20px;
+        left: 170px;
+    }
+
+    .button {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .show {
+        visibility: visible;
+        opacity: 100;
+        display: block;
+    }
+
+    .hide {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+  </style>
+
+  <script>
+
+    function clicked(target) {
+        const buttons = document.getElementsByClassName("button");
+
+        // for(let i=0; i<buttons.length; i++) {
+        //     buttons[i].className = "show";
+        // }
+
+        //target.className = "hide";
+
+    }
+
+  </script>
+
 </head>
 <body>
 
   <div>TEST</div>
+
+  <br>
+
+  <div id="Border1">
+    <div class="pos">
+      <img src="asset/plate.png" width="500px" alt="plate">
+
+      <div class="pos2">
+
+        <button class="button" onclick="clicked(this)"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+
+        <br>
+
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+        <button class="button"></button>
+
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
